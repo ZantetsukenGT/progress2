@@ -1,11 +1,11 @@
 {
-    "user": "Southclaws",
+    "user": "ZantetsukenGT",
     "repo": "progress2",
     "entry": "test.pwn",
     "output": "test.amx",
+    "contributors": ["Southclaws"],
     "dependencies": [
         "Southclaws/samp-stdlib",
-        "Southclaws/samp-logger",
         "pawn-lang/YSI-Includes"
     ],
     "dev_dependencies": [
