@@ -433,10 +433,12 @@ _progress2_renderBar(playerid, barid)
 
 hook OnScriptInit() {
 	Iter_Init(pbar_Index);
+	return 1;
 }
 
 hook OnPlayerDisconnect(playerid, reason) {
 	Iter_Clear(pbar_Index[playerid]);
+	return 1;
 }
 
 hook OnScriptExit() {
@@ -444,6 +446,7 @@ hook OnScriptExit() {
 		if(IsPlayerConnected(i))
 			DestroyAllPlayerProgressBars(i);
 	}
+	return 1;
 }
 
 stock DestroyAllPlayerProgressBars(playerid) {
